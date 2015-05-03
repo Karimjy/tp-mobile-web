@@ -1,0 +1,390 @@
+body {
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+/* ==== COMMUN ==== */
+
+ul li {
+    list-style-type: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+/* ==== HEADER ==== */
+
+.wrapheader {
+    height: 100px;
+}
+
+.header {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 23px;
+    text-align: center;
+}
+
+.logo {
+    width: 295px;
+    height: 100px;
+    background-color: #C85540;
+    float: left;
+}
+/* NAV */
+
+.nav {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav .margin-left {
+    margin-left: 38px;
+}
+
+.undernav {
+    clear: both;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.undernav ul li {
+    margin-bottom: 67px;
+    letter-spacing: 3px;
+}
+/* SEARCH */
+
+.search {
+    overflow: hidden;
+}
+
+.search input[type="search"] {
+    width: 100%;
+    height: 78px;
+    background-color: #f4f4f4;
+    border-left: 3px solid #cccccc;
+    border-top: 3px solid #cccccc;
+}
+
+button.searchL {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: none;
+    background: none;
+    display: inline-block;
+    top: -57px;
+    margin-right: 17px;
+}
+
+button.searchL:after {
+    content: url(src/img/search.png);
+}
+/* CAKE */
+
+.background {
+    margin: 0;
+    padding: 0;
+}
+
+.background img {
+    width: 100%;
+}
+
+.underback {
+    background-color: #c85540;
+    width: 100%;
+    /*height: 158px;*/
+    
+    padding: 22px 0 22px 0;
+}
+
+.underback .logo {
+    background-color: #6f5a55;
+    width: 279px;
+    height: 120px;
+    margin: 0 auto;
+    float: none;
+}
+/*=== MEDIA QUERIES ===*/
+
+@media screen and (min-width: 768px) {
+    .header .nav ul li:first-child {
+        display: none;
+    }
+    .header .nav {
+        float: right;
+    }
+    .header .undernav {
+        margin-top: 3em;
+        font-size: 87%;
+    }
+    .header .undernav ul li {
+        display: inline-block;
+        letter-spacing: 0;
+    }
+    .header .undernav ul li+li:before {
+        content: '';
+        border: 1px solid rgba(0, 0, 0, .5);
+        margin-right: 16px;
+        margin-left: 8px;
+    }
+    .search {
+        width: 50%;
+        margin-top: -15em;
+        -webkit-transform: translateX(71%);
+        -ms-transform: translateX(71%);
+        transform: translateX(71%);
+    }
+    input[type="search"] {
+        width: 90%;
+    }
+    .background {
+        margin-top: 4em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .underback,
+    .nav {
+        display: none;
+    }
+    .background img {
+        height: 65%;
+    }
+}
+/* ====  IDEA ==== */
+
+.logoSection {
+    margin-top: 56px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.logoSection .arrow {
+    border: none;
+    background: none;
+    margin-top: -9px;
+    margin-bottom: 35px;
+}
+
+.logoSection .arrow:after {
+    content: url(src/img/arrow.png);
+}
+/* ENVIES */
+
+.title.red,
+.title.blue {
+    background-color: #c85540;
+    color: white;
+    height: 91px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    line-height: 6em;
+}
+
+.title.blue {
+    background-color: #6FC2C8;
+}
+
+.envie ul {
+    margin: 0;
+    padding: 0;
+    line-height: 6em;
+    margin-bottom: -16px;
+}
+
+.envie ul li {
+    background-color: #f4f3ef;
+    height: 91px;
+    padding-left: 26%;
+    margin-bottom: 2px;
+}
+
+.envie ul li .arrow {
+    border: none;
+    background: none;
+    float: right;
+    margin-right: 26px;
+    margin-top: 8%;
+}
+
+.envie ul li .arrow:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    display: inline-block;
+    margin-left: 1em;
+}
+/* BUTTON SEARCH */
+
+.goSearch {
+    text-align: center;
+}
+
+.goSearch button {
+    border: none;
+    background: none;
+    color: #6FC2C8;
+    margin-top: 33px;
+    margin-bottom: 115px;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.goSearch button::before {
+    content: '>';
+}
+/* ==== ASTUCE ==== */
+
+.astuce ul {
+    text-align: center;
+}
+
+.astuce .see {
+    width: 80px;
+    height: 23px;
+    background-color: #c85540;
+    border: none;
+    color: white;
+}
+
+.astuce ul li {
+    margin-bottom: 50px;
+}
+
+.astuce li p {
+    margin-bottom: -12px;
+    font-size: larger;
+}
+/* ==== PRODUITS ==== */
+
+.produit {
+    width: 100%;
+}
+
+.wrap {
+    text-align: center;
+    float: none;
+}
+
+.produit h2 {
+    color: #a4a4a4;
+    font-style: italic;
+    font-size: 2.0em;
+    color: #434343;
+    font-weight: lighter;
+    border-bottom: 2px solid #a4a4a4;
+    position: relative;
+    padding: 10px 5px;
+    margin: auto;
+    width: 52%;
+    margin-bottom: 23px;
+}
+
+.produit h2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 2px;
+    background: #a4a4a4;
+}
+
+.blocgrey {
+    background-color: 8d7f7f;
+    margin: 0 auto;
+    height: 195px;
+    width: 272px;
+}
+
+.produit button.dec {
+    border: none;
+    background: none;
+    color: white;
+    background-color: #c85540;
+    margin-bottom: 85px;
+    margin-top: 33px;
+}
+/*=== MEDIA QUERIES ===*/
+
+@media screen and (min-width: 768px) {
+    .wrapenvie,
+    .produit .wrap {
+        display: none;
+    }
+    section.idea,
+    section.astuce,
+    section.produit {}
+    section.produit .arrow {
+        margin-top: 1.8em;
+    }
+    .logoSection {
+        padding-top: 56px;
+        padding-right: 3%;
+        padding-left: 3px;
+        width: 30%;
+        float: left;
+        background-color: #f4f4f4;
+    }
+    .envie,
+    .goSearch {
+        clear: both;
+        width: 100%;
+    }
+    section.footer {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapenvie,
+    .produit .wrap {
+        display: block;
+    }
+    section.idea,
+    section.astuce,
+    section.produit {
+        width: 22%;
+        float: left;
+    }
+    section.astuce {
+        width: 42%;
+    }
+    section.idea {
+        width: 32%;
+    }
+    .wrapenvie {
+        width: 64%;
+        margin-left: 123px;
+    }
+    .logoSection {
+        float: none;
+        background-color: white;
+    }
+}
+/*=== FOOTER ===*/
+
+.footer {
+    text-align: center;
+    font-style: italic;
+    background-color: #999999;
+    margin: 0;
+    padding: 0;
+    height: 58px;
+    color: white;
+}
